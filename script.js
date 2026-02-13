@@ -25,6 +25,12 @@ function addOrUpdateMicrobit(name, data) {
     const dataCell = row.insertCell(2);
     dataCell.textContent = data;
 
+    const removeCell = row.insertCell(3);
+    const btn = document.createElement("button");
+    btn.textContent = "Remove Row";
+    btn.className = "removeRow";
+    removeCell.appendChild(btn)
+
     knownDevices.set(name, row);
 }
 
@@ -44,8 +50,13 @@ async function rxData() {
     }
 }
 
-
 setInterval(rxData, 1000); //no button, function runs every 4secs
 
 
-const removeRow = getElementById("microbitDisplayBoard");
+const table = document.getElementById("microbitDisplayBoard");
+table.addEventListener('click', function(event){ 
+    if(event.target.classList.contains("removeRow")){
+        const row = event.target.closest("tr");
+        row.remove();
+    }
+});
