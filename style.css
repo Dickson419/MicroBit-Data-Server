@@ -1,0 +1,26 @@
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+img.microbitImg{
+    width: 125px;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    margin: 5%;
+}

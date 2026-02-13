@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>MicroBit Server</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"> -->
+</head>
+
+
+<body>
+    <div class="header">
+        <h1>Microbit Mainframe Controller</h1>
+    </div>
+
+    <div class="startDataTX" id="dataTXbtn" action="/getData">
+        <button>Get Data</button>
+    </div>
+
+    <div class="microbitTable">
+        <table id="microbitDisplayBoard">
+            <tr>
+                <th>Microbit</th>
+                <th>Location</th>
+                <th>Data Readings</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <picture>
+                        <source src="images/microbit_1.webp" type="image/webp">
+                        <img src="images/microbit_1.webp" alt="image of a microbit" class="microbitImg">
+                    </picture>
+                </td>
+
+                <td>
+                    TEST LOCATION
+                </td>
+                
+                <td>
+                    TEST DATA
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
