@@ -17,16 +17,13 @@
         <h1>Microbit Mainframe Controller</h1>
     </div>
 
-    <div class="startDataTX" id="dataTXbtn" action="/getData">
-        <button>Get Data</button>
-    </div>
-
     <div class="microbitTable">
         <table id="microbitDisplayBoard">
             <tr>
                 <th>Microbit</th>
                 <th>Location</th>
                 <th>Data Readings</th>
+                <th>Remove</th>
             </tr>
 
             <tr>
@@ -43,6 +40,10 @@
                 
                 <td>
                     TEST DATA
+                </td>
+
+                <td>
+                    <button type="button" class="removeRow">Remove Row</button>
                 </td>
 
             </tr>
